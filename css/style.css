@@ -1,0 +1,437 @@
+/*body*/
+body {
+  /*  Sembunyikan Scrollbar  */
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+ }
+ 
+body::-webkit-scrollbar{
+  display: none;
+ }
+
+/*header*/
+header .navbar{
+    background-color: #1a1a1a;
+    height: 75px;
+    text-decoration: white;
+}
+
+/*navbar*/
+.collapse .nav-item .nav-link {
+    color: white;
+}
+
+.collapse .navbar-nav .nav-link.active{
+  color: rgb(255, 0, 0);
+}
+
+.navbar .navbar-brand .logo{
+    height: 75px;
+} 
+
+.navbar .navbar-nav .nav-item .nav-link{
+    margin-left: 50px;
+}
+
+/*dropdown hover*/
+.nav-link {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #287ab9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-menu {display: block;}
+  
+  .dropdown:hover .nav-link {background-color: #0091ff;}
+
+
+/* slider */
+.slide .myslide {
+  display:none;
+  width: 100%;
+}
+
+/* model*/
+.model h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.model ul {
+  margin:0;padding:0;
+}
+
+.model ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+}
+
+.model ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.model ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan*/
+.sedan h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan ul {
+  margin:0;padding:0;
+}
+
+.sedan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+  
+}
+
+.sedan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan1*/
+.sedan1 h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan1 ul {
+  margin:0;padding:0;
+}
+
+.sedan1 ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-columns: 495px;
+  position: relative;
+  left: 33%;
+
+}
+
+.sedan1 ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan1 ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* suv*/
+.suv h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.suv ul {
+  margin:0;padding:0;
+}
+
+.suv ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+}
+
+.suv ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.suv ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/*c3*/
+.content {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 3000px;
+}
+
+.content h1{
+  color: white;
+  margin: 10px 0 10px 115px;
+}
+
+.content .car {
+  width: 800px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.content .rinci {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 100px;
+  margin: 10px 0 10px 50px;
+}
+
+.content .rinci ul {
+  margin:0;padding:0;
+}
+
+.content .rinci ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+}
+
+.content .rinci ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.content .rinci ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: -10px 0 0 0;
+}
+
+.content .rinci ul li p{
+  margin: -60px 0 0 50px;
+}
+
+.content .rinci ul li .jenis{
+  margin: 10px 0 0 50px;
+}
+
+.content .harga {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 180px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .harga h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .harga ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+  
+}
+
+.content .harga ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.content .harga ul li p{
+  margin: 0;
+}
+
+/*penjelasan*/
+.content .penjelasan {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 680px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .penjelasan p{
+  color: white;
+  line-height:16px;
+  margin: 10px;
+}
+
+/*spek*/
+.content .spek {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 1000px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .spek h1{
+  color: white;
+  margin: 10px 0 0px 10px;
+}
+
+.content .spek h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+
+
+/* spek kiri*/
+.content .spek .spekk .kiri{
+  box-sizing: border-box;
+  width: 200px;
+  height: 850px;
+  margin: 0 0 0 10px;
+  position: absolute;
+}
+
+.content .spek .spekk .kiri ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk .kiri ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.content .spek .spekk .kiri ul li h4{
+  color: white;
+  margin-top: 30px;
+}
+
+/* spek kanan*/
+.content .spek .spekk .kanan{
+  box-sizing: border-box;
+  width: 680px;
+  height: 760px;
+  margin: 20px 0 0 210px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 50px;
+}
+
+.content .spek .spekk .kanan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk .kanan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 680px;
+  height: 100px;
+}
+
+.content .spek .spekk .kanan ul li p{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 0 0 0 0;
+}
+
+
+/*footer*/
+.footer {
+    background: linear-gradient( #1E1E1E, #1E1E99);
+    border-top: white 1px solid;
+    padding: 10px;
+}
