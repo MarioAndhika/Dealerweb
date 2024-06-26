@@ -618,3 +618,52 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/*tim*/
+.transparent-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.separator-line {
+  border-top: 2px solid #fff;
+  margin: 20px 0;
+}
+.card-title {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.card-text {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.section-title {
+  background-color: rgba(20, 19, 19, 0.295);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}.transparent-box {
+  background-color: rgba(11, 11, 11, 0.699);
+  padding: 20px;
+  border-radius: 10px;
+}
+.separator-line {
+  border-top: 2px solid #fff;
+  margin: 20px 0;
+}
+.card-title {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.card-text {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.section-title {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
