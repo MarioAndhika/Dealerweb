@@ -44,7 +44,7 @@
                                 <li><a class="dropdown-item" href="suv.html">SUV</a></li>
                                 <li><a class="dropdown-item" href="sedan.html">SEDAN</a></li>
                                 <li><a class="dropdown-item" href="mpv.html">MPV</a></li>
-                                <li><a class="dropdown-item" href="citroen.html">CITROEN</a></li>
+
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -66,9 +66,14 @@
                 <div class="col-md-6">
                     <div class="kotak">
                         <h2>Alamat dan Kontak Perusahaan</h2>
-                        <p>Jl. Raya Kediri, No. 1, Kediri, Jawa Timur</p>
-                        <p>Telepon: 08123456789</p>
-                        <p>Email: info@dealermobil.com</p>
+                        <p>Kantor Amikom Ruko Permata Regensi Blok B-18, Jalan Haji Kelik
+                            Srengseng, Kembangan, Jakarta Barat 11630 (Depan Hutan Kota Srengseng)</p>
+                        <p>Telepon: (021) 5890-8355 , 0812-9933-3913</p>
+                        <p>CS #1 : 089187234567</p>
+                        <p>CS #1 : 081350981234</p>
+                        <p>CS #1 : 082123456789</p>
+                        <p>CS #1 : 085132476809</p>
+                        <p>Email: info@dealermobil.com</p>  
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -138,6 +143,22 @@
                 });
             });
         });
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("myslide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
     </script>
 </body>
 </html>
