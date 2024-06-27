@@ -1,0 +1,669 @@
+/*body*/
+body {
+  /*  Sembunyikan Scrollbar  */
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+ }
+ 
+body::-webkit-scrollbar{
+  display: none;
+ }
+
+/*header*/
+header .navbar{
+    background-color: #1a1a1a;
+    height: 75px;
+    text-decoration: white;
+}
+
+/*navbar*/
+.collapse .nav-item .nav-link {
+    color: white;
+}
+
+.collapse .navbar-nav .nav-link.active{
+  color: rgb(255, 0, 0);
+}
+
+.navbar .navbar-brand .logo{
+    height: 75px;
+} 
+
+.navbar .navbar-nav .nav-item .nav-link{
+    margin-left: 50px;
+}
+
+/*dropdown hover*/
+.nav-link {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #287ab9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-menu {display: block;}
+  
+  .dropdown:hover .nav-link {background-color: #0091ff;}
+
+
+/* slider */
+.slide .myslide {
+  display:none;
+  width: 100%;
+}
+
+/* model*/
+.model h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.model ul {
+  margin:0;padding:0;
+}
+
+.model ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+}
+
+.model ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.model ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan*/
+.sedan h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan ul {
+  margin:0;padding:0;
+}
+
+.sedan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+  
+}
+
+.sedan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* sedan1*/
+.sedan1 h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sedan1 ul {
+  margin:0;padding:0;
+}
+
+.sedan1 ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-columns: 495px;
+  position: relative;
+  left: 33%;
+
+}
+
+.sedan1 ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.sedan1 ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* suv*/
+.suv h3 {
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.suv ul {
+  margin:0;padding:0;
+}
+
+.suv ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-rows: 600px;
+}
+
+.suv ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+.suv ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/*c3*/
+.content {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 3000px;
+}
+
+.content h1{
+  color: white;
+  margin: 10px 0 10px 115px;
+}
+
+.content .car {
+  width: 800px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.content .rinci {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 100px;
+  margin: 10px 0 10px 50px;
+}
+
+.content .rinci ul {
+  margin:0;padding:0;
+}
+
+.content .rinci ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+}
+
+.content .rinci ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.content .rinci ul li img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: -10px 0 0 0;
+}
+
+.content .rinci ul li p{
+  margin: -60px 0 0 50px;
+}
+
+.content .rinci ul li .jenis{
+  margin: 10px 0 0 50px;
+}
+
+.content .harga {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 180px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .harga h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .harga ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1px;
+  grid-template-rows: 100px;
+  
+}
+
+.content .harga ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.content .harga ul li p{
+  margin: 0;
+}
+
+/*penjelasan*/
+.content .penjelasan {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 680px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .penjelasan p{
+  color: white;
+  line-height:16px;
+  margin: 10px;
+}
+
+/*spek*/
+.content .spek {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 900px;
+  height: 1000px;
+  margin: 20px 0 10px 50px;
+}
+
+.content .spek h1{
+  color: white;
+  margin: 10px 0 0px 10px;
+}
+
+.content .spek h2{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+
+
+/* spek kiri*/
+.content .spek .spekk .kiri{
+  box-sizing: border-box;
+  width: 200px;
+  height: 850px;
+  margin: 0 0 0 10px;
+  position: absolute;
+}
+
+.content .spek .spekk .kiri ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk .kiri ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.content .spek .spekk .kiri ul li h4{
+  color: white;
+  margin-top: 30px;
+}
+
+/* spek kanan*/
+.content .spek .spekk .kanan{
+  box-sizing: border-box;
+  width: 680px;
+  height: 760px;
+  margin: 20px 0 0 210px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 50px;
+}
+
+.content .spek .spekk .kanan ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: 100px;
+  grid-gap: 10px;
+  grid-template-rows: repeat(7, auto);
+}
+
+.content .spek .spekk .kanan ul li {
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 680px;
+  height: 100px;
+}
+
+.content .spek .spekk .kanan ul li p{
+  color: white;
+  margin: 10px 0 10px 10px;
+}
+
+.content .spek .spekk .kanan .kaki{
+  border: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 150px;
+  height: 760px;
+  margin: 0 0 0 0;
+}
+
+
+/*footer*/
+.footer {
+    background: linear-gradient( #1E1E1E, #1E1E99);
+    border-top: white 1px solid;
+    padding: 10px;
+}
+
+/*background*/
+.slide-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Sesuaikan dengan tinggi yang diinginkan */
+  z-index: -1; /* Untuk memastikan slider berada di belakang konten utama */
+  overflow: hidden; /* Memastikan gambar tidak melebihi ukuran slide */
+}
+ /* Gaya tambahan untuk visi dan misi */
+ .visi-misi {
+  background-color: rgba(0, 0, 0, 0.7); /* Ubah opacity sesuai kebutuhan */
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+}
+.visi-misi h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.visi-misi p {
+  margin-bottom: 10px;
+}
+.visi-misi ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kotak {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.garis {
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-kontak {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-kontak input[type=text], 
+.form-kontak input[type=email], 
+.form-kontak textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-kontak input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-kontak input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+ /*kontak*/
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #1A1A1A;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.kotak {
+  background-color: rgba(0, 0, 0, 0.680);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.garis {
+  border-top: 1px solid #0d43a1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-kontak {
+  background-color: rgba(11, 11, 11, 0.680);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form-kontak input[type=text], 
+.form-kontak input[type=email], 
+.form-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+}
+
+.form-kontak input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-kontak input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*tim*/
+.transparent-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.separator-line {
+  border-top: 2px solid #fff;
+  margin: 20px 0;
+}
+.card-title {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.card-text {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.section-title {
+  background-color: rgba(20, 19, 19, 0.295);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}.transparent-box {
+  background-color: rgba(11, 11, 11, 0.699);
+  padding: 20px;
+  border-radius: 10px;
+}
+.separator-line {
+  border-top: 2px solid #fff;
+  margin: 20px 0;
+}
+.card-title {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.card-text {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.section-title {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}

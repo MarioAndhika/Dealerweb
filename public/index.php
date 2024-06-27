@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda | Auto</title>
-    <link rel="stylesheet" href="{{ asset('resources/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('resources/css/bootstrap-grid.min.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body style="background-color: #1A1A1A;">
     <!-- header -->
     <header>
         <nav class="navbar navbar-expand">
-            <div class="container"> 
-                <a href="#" class="navbar-brand"> 
+            <div class="container">
+                <a href="#" class="navbar-brand">
                     <img class="logo" src="img/logo_dealer.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                 </div>
-            
+
             </div>
         </nav>
     </header>
@@ -59,7 +59,7 @@
         <img class="myslide" src="img/silde 2.png" alt="Gambar 1">
         <img class="myslide" src="img/hasil mobil.png" alt="Gambar 2">
     <!-- tambahkan slide lainnya jika diperlukan -->
-    </div> 
+    </div>
 
     <!-- model teratas -->
     <div class="model">
@@ -114,7 +114,7 @@
                     <br>
                     Rp528.5 - 558.5 Juta</p>
             </li>
-            
+
         </ul>
     </div>
 
@@ -165,14 +165,14 @@
                     <h3>Kontak</h3>
                     <p>Telepon: 08123456789</p>
                     <p>Email: info@dealermobil.com</p>
-                    
+
                 </div>
             </div>
             <p>&copy; 2024 AutoDeal. All rights reserved.</p>
         </div>
     </footer>
 
-                    
+
 </body>
 
 <!-- script -->
@@ -183,16 +183,16 @@
     <script>
         var myIndex = 0;
         carousel();
-        
+
         function carousel() {
           var i;
           var x = document.getElementsByClassName("myslide");
           for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+            x[i].style.display = "none";
           }
           myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
           setTimeout(carousel, 3000); // Change image every 3 seconds
         }
         </script>
