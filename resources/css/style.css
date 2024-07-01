@@ -4,7 +4,7 @@ body {
   -ms-overflow-style: none;
    scrollbar-width: none;
  }
- 
+
 body::-webkit-scrollbar{
   display: none;
  }
@@ -27,7 +27,7 @@ header .navbar{
 
 .navbar .navbar-brand .logo{
     height: 75px;
-} 
+}
 
 .navbar .navbar-nav .nav-item .nav-link{
     margin-left: 50px;
@@ -39,12 +39,12 @@ header .navbar{
     font-size: 16px;
     border: none;
   }
-  
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-menu {
     display: none;
     position: absolute;
@@ -53,18 +53,18 @@ header .navbar{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   .dropdown-menu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown-menu a:hover {background-color: #ddd;}
-  
+
   .dropdown:hover .dropdown-menu {display: block;}
-  
+
   .dropdown:hover .nav-link {background-color: #0091ff;}
 
 
@@ -124,7 +124,7 @@ header .navbar{
   grid-template-columns: repeat(4, auto);
   grid-gap: 10px;
   grid-template-rows: 600px;
-  
+
 }
 
 .sedan ul li {
@@ -296,7 +296,7 @@ header .navbar{
   grid-template-columns: repeat(4, auto);
   grid-gap: 1px;
   grid-template-rows: 100px;
-  
+
 }
 
 .content .harga ul li {
@@ -499,8 +499,8 @@ body {
     margin-top: 20px;
 }
 
-.form-kontak input[type=text], 
-.form-kontak input[type=email], 
+.form-kontak input[type=text],
+.form-kontak input[type=email],
 .form-kontak textarea {
     width: 100%;
     padding: 10px;
@@ -576,8 +576,8 @@ footer {
   margin-top: 20px;
 }
 
-.form-kontak input[type=text], 
-.form-kontak input[type=email], 
+.form-kontak input[type=text],
+.form-kontak input[type=email],
 .form-kontak textarea {
   width: 100%;
   padding: 10px;
