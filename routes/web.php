@@ -56,3 +56,7 @@ Route::get('/c3', function () {
 Route::get('/mg5gt', function () {
     return view('mg5gt');
 })->name('mg5gt');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
