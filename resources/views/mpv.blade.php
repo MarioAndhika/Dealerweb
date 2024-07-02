@@ -1,110 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    .card a {
+        text-decoration: none;
+        color: inherit; /* Pilih warna teks sesuai kebutuhan */
+    }
+</style>
 
-<div class="container my-5">
-    <!-- Section SEDAN -->
-    <h1 class="text-center mb-5">MPV</h1>
-        <div class="row mb-4">
-            <div class="col-md-4">
+<div class="container mt-5">
+    <!-- Section SUV -->
+    <div class="sedan">
+        <h1 class="text-center mb-3">MPV</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-3">
                 <div class="card">
-                    <a href="mg5gt.html">
-                    <img src="{{asset('assets/MG-5-GT.jpg')}}" class="d-block w-100" alt="...">
+                    <a href="{{ url('Alphar') }}">
+                        <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title ">Toyota Alphard</h5>
+                            <p class="card-text">Rp1.381 - 1.682 Milyar</p>
+                        </div>
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Mg 5 GT</h5>
-                        <div class="card-text">
-                            <ul class="list-unstyled text-center">
-                                <hr>
-                                <li>
-                                    <span>Otomatis</span>
-                                    <span>Transmisi</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>Bensin</span>
-                                    <span>Bahan bakar</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>1498 cc</span>
-                                    <span>Mesin</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-center">
-                            <p>Rp347.9 - 407.9 Juta</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="bmw.html">
-                        <img src="{{asset('assets/bmw 320i.jpeg')}}" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Bmw 320i</h5>
-                        <div class="card-text">
-                            <ul class="list-unstyled text-center">
-                                <hr>
-                                <li>
-                                    <span>Otomatis</span>
-                                    <span>Transmisi</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>Bensin</span>
-                                    <span>Bahan bakar</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>1498 cc</span>
-                                    <span>Mesin</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-center">
-                            <p>Rp837 Jt - 1.145 Milyar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="Lexus Ls.html">
-                        <img src="{{asset('assets/slide2.jpg')}}" class="d-block w-100" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Lexus LS 500h</h5>
-                        <div class="card-text">
-                            <ul class="list-unstyled text-center">
-                                <hr>
-                                <li>
-                                    <span>Otomatis</span>
-                                    <span>Transmisi</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>Hybrid</span>
-                                    <span>Bahan bakar</span>
-                                </li>
-                                <hr>
-                                <li>
-                                    <span>3456 cc</span>
-                                    <span>Mesin</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-center">
-                            <p>Rp3.535 Milyar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-
+    </div>
 <!-- Footer -->
 <footer class="footer mt-5" style="background-color: #333; color: white; padding: 50px 0;">
     <div class="container">

@@ -31,22 +31,30 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="model mt-5">
-                    <h3>Model Teratas</h3>
+                    <h3 class="text-black">Model Teratas</h3>
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                                </a>
                             <p>Citroen C3<br>Rp225 - 236 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('assets/MG-5-GT.jpg') }}" class="d-block w-100 h-auto" alt="Mg 5 GT">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Mg 5 GT<br>Rp347.9 - 407.9 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('assets/bmw 320i.jpeg') }}" class="d-block w-100 h-auto" alt="Bmw 320i">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Bmw 320i<br>Rp837 Jt - 1.145 Milyar</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('assets/mercedes.jpg') }}" class="d-block w-100 h-auto" alt="Mercedes-Benz AMG GT R Coupe">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Mercedes-Benz AMG GT R Coupe<br>Rp837 Jt - 1.145 Milyar</p>
                         </div>
                     </div>
@@ -60,18 +68,24 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="model mt-5">
-                    <h3>Model Pilihan</h3>
+                    <h3 class="text-black">Model Pilihan</h3>
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="{{asset('assets/Toyota Alp.jpeg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Toyota Alphard<br>Rp1.381 - 1.682 Milyar</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{asset('assets/Honda HR-V.jpeg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Honda HR-V<br>Rp383.9 - 540.3 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{asset('assets/Chery Omoda 5.jpeg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Chery Tiggo 8 Pro<br>Rp528.5 - 558.5 Juta</p>
                         </div>
                     </div>
@@ -85,22 +99,30 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="model mt-5">
-                    <h3>Model Terbaru</h3>
+                    <h3 class="text-black">Model Terbaru</h3>
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="{{asset('assets/livina.jpg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Nissan Livina<br>Rp292.5 - 327 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{asset('assets/slide2.jpg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Lexus LS 500 Executive<br>Rp3.745 Milyar</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{asset('assets/wuling Almaz.jpeg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Wuling Almaz Hybrid<br>Rp476 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{asset('assets/Mazda CX-30.jpg')}}" class="d-block w-100" alt="...">
+                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                                <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
+                            </a>
                             <p>Mazda CX-30<br>Rp572.2 Juta</p>
                         </div>
                     </div>

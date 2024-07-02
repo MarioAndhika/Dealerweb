@@ -27,33 +27,55 @@
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card">
-                <a href="{{ url('mg5gt') }}">
+                <a href="{{ url('HR-V') }}">
                         <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Mg 5 GT</h5>
-                            <p class="card-text">Rp347.9 - 407.9 Juta</p>
+                            <h5 class="card-title">Honda HR-V</h5>
+                            <p class="card-text">Rp383.9 - 540.3 Juta</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card">
-                    <a href="#">
+                    <a href="Chery Tnggo 8 pro">
                         <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Citroen C3</h5>
-                            <p class="card-text">Rp225 - 236 Juta</p>
+                            <h5 class="card-title">Chery Tnggo 8 pro</h5>
+                            <p class="card-text">Rp528.5 - 558.5 Juts</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="col-md-3 mb-3">
                 <div class="card">
-                    <a href="#">
+                    <a href="wuling">
                         <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Citroen C3</h5>
-                            <p class="card-text">Rp225 - 236 Juta</p>
+                            <h5 class="card-title">Wuling Almaz Hybrid</h5>
+                            <p class="card-text">Rp476 Juta</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <a href="Mazda CX-30">
+                        <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mazda CX-30</h5>
+                            <p class="card-text">Rp572.2 Juta</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <a href="NissanLivina">
+                        <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nissan Livina</h5>
+                            <p class="card-text">Rp292.5 - 327 Juta</p>
                         </div>
                     </a>
                 </div>

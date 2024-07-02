@@ -57,6 +57,42 @@ Route::get('/mg5gt', function () {
     return view('mg5gt');
 })->name('mg5gt');
 
+Route::get('/wuling', function () {
+    return view('wuling');
+})->name('wuling');
+
+Route::get('/Chery Tnggo 8 pro', function () {
+    return view('Chery Tnggo 8 pro');
+})->name('Chery Tnggo 8 pro');
+
+Route::get('/Mazda CX-30', function () {
+    return view('Mazda CX-30');
+})->name('Mazda CX-30');
+
+Route::get('/NissanLivina', function () {
+    return view('NissanLivina');
+})->name('NissanLivina');
+
+Route::get('/Lexus Ls', function () {
+    return view('Lexus Ls');
+})->name('Lexus Ls');
+
+Route::get('/bmw', function () {
+    return view('bmw');
+})->name('bmw');
+
+Route::get('/HR-V', function () {
+    return view('HR-V');
+})->name('HR-V');
+
+Route::get('/mercedes', function () {
+    return view('mercedes');
+})->name('mercedes');
+
+Route::get('/Alphar', function () {
+    return view('Alphar');
+})->name('Alphar');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
