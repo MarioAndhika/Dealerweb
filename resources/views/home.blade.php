@@ -40,7 +40,7 @@
                             <p>Citroen C3<br>Rp225 - 236 Juta</p>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{ url('c3') }}"style="color: black; text-decoration: none;">
+                            <a href="{{ url('mg5gt') }}"style="color: black; text-decoration: none;">
                                 <img src="{{ asset('assets/c3.jpeg') }}" class="d-block w-100 h-auto" alt="Citroen C3">
                             </a>
                             <p>Mg 5 GT<br>Rp347.9 - 407.9 Juta</p>
