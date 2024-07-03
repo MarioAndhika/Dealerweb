@@ -6,26 +6,26 @@
             <div class="col-md-8">
                 <div class="specification-section">
                     <h2 class="text-white">Wuling Almaz Hybrid</h2>
-                    <img src="{{ asset('assets/wuling Almaz.jpeg') }}" class="card-img-top" alt="...">
+                    <img src="img/wuling Almaz.jpeg" class="img-fluid mb-4" alt="Wuling">
                 </div>
 
                 <div class="specification-section">
                     <div class="row text-center mb-4">
                         <div class="col">
                             <div class="spec-box">
-                                <img src="{{ asset('assets/transmission-spec.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                                <img src="img/transmission-spec.png" alt="Transmisi Otomatis" class="spec-icon" style="width: 30px;">
                                 <p>Otomatis</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="spec-box">
-                                <img src="{{ asset('assets/fuel-type.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                                <img src="img/fuel-type.png" alt="Bahan Bakar" class="spec-icon" style="width: 30px;">
                                 <p>Bensin</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="spec-box">
-                                <img src="{{ asset('assets/engine-size.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                                <img src="img/engine-size.png" alt="Mesin" class="spec-icon" style="width: 30px;">
                                 <p>1999 cc</p>
                             </div>
                         </div>
@@ -191,9 +191,7 @@
                 <p>Email: info@dealermobil.com</p>
             </div>
         </div>
-        <p class="text-center mt-3">&copy; 2024 Dealer Mobil. All rights reserved.</p>
     </div>
 </footer>
 
 @endsection
-

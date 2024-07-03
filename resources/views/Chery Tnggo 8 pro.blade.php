@@ -1,31 +1,136 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chery Tiggo 8 Pro | AutoDeal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #1A1A1A;
+            color: white;
+        }
+        .navbar,
+        .footer {
+            background-color: #333;
+        }
 
-@section('content')
+        .main-content-box {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #1A1A1A;
+        }
+
+        .card {
+            background-color: #1A1A1A;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+        }
+
+        .spec-icon {
+            filter: invert(1);
+        }
+
+        .spec-box {
+            border: 1px solid #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .price-box {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .specification-section {
+            border: 1px solid #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img class="logo" src="img/logo_dealer.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jenis Mobil
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="suv.html">SUV</a></li>
+                                <li><a class="dropdown-item" href="sedan.html">SEDAN</a></li>
+                                <li><a class="dropdown-item" href="mpv.html">MPV</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tim.html">Tim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
     <!-- Main Content -->
     <div class="container my-5 main-content-box">
         <div class="row">
             <div class="col-md-8">
             <div class="specification-section">
                 <h2 class="text-white">Chery Tiggo 8 Pro</h2>
-                <img src="{{ asset('assets/Chery Omoda 5.jpeg') }}" class="card-img-top" alt="...">
+                <img src="img/Chery Omoda 5.jpeg" class="img-fluid mb-4" alt="Chery">
             </div>
             <div class="specification-section">
                 <div class="row text-center mb-4">
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/transmission-spec.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/transmission-spec.png" alt="Transmisi Otomatis" class="spec-icon" style="width: 30px;">
                             <p>Otomatis</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/fuel-type.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/fuel-type.png" alt="Bahan Bakar" class="spec-icon" style="width: 30px;">
                             <p>Bensin</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/engine-size.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/engine-size.png" alt="Mesin" class="spec-icon" style="width: 30px;">
                             <p>2000 cc</p>
                         </div>
                     </div>
@@ -69,8 +174,8 @@
              <div class="specification-section">
                 <p>Tiggo 8 Pro memiliki akselerasi dan kecepatan yang sangat memadai untuk melaju di segala situasi dan kondisi. Menjadikan Anda pemimpin di kelasnya. Mesin Turbo ini dapat menghasilkan tenaga hingga 250 HP.</p>
                 <p>Tiggo 8 Pro dibangun di atas platform T1X. Sasis ini sengaja dibuat untuk memungkinkan ruang kepala yang lebih baik untuk kursi depan dan belakang, serta ground clearance yang lebih tinggi. Sudut pendekatan dan keberangkatan yang tinggi juga memastikan performa off-road yang lebih baik jika dan saat dibutuhkan.</p>
-                <p>EPS (Electronic Power Steering) Tiggo 8 Pro memungkinkan kemudi ringan pada kecepatan rendah dan kemudi stabil pada kecepatan tinggi untuk meningkatkan efisiensi bahan bakar dibandingkan dengan sistem tenaga hidrolik.</p>
-                <p>Tiggo 8 Pro memiliki tingkat kedap interior hanya 35dB. Itu setenang perpustakaan. Material peredam kebisingan digunakan di seluruh interior, eksterior, bodi, dan sasis. Kompresor perpindahan variabel yang dikontrol secara eksternal meredam kebisingan dari kompresor depan, kipas pendingin, dan pompa bahan bakar belakang, sementara kipas stepless secara efektif mengurangi kebisingan dalam kondisi kecepatan tinggi.</p>
+                <p>EPS (Electronic Power Steering) Tiggo 8 Pro memungkinkan kemudi ringan pada kecepatan rendah dan kemudi stabil pada kecepatan tinggi untuk meningkatkan efisiensi bahan bakar dibandingkan dengan sistem tenaga hidrolik.</p> 
+                <p>Tiggo 8 Pro memiliki tingkat kedap interior hanya 35dB. Itu setenang perpustakaan. Material peredam kebisingan digunakan di seluruh interior, eksterior, bodi, dan sasis. Kompresor perpindahan variabel yang dikontrol secara eksternal meredam kebisingan dari kompresor depan, kipas pendingin, dan pompa bahan bakar belakang, sementara kipas stepless secara efektif mengurangi kebisingan dalam kondisi kecepatan tinggi.</p>  
             </div>
                 <div class="specification-section">
                     <h3 class="text-white">Spesifikasi Lengkap</h3>
@@ -177,26 +282,18 @@
     </div>
 
    <!-- footer -->
-   <footer class="footer mt-5" style="background-color: #333; color: white; padding: 50px 0;">
+   <footer class="footer" style="background-color: #333; color: white; padding: 50px 0;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Dealer Mobil</h3>
-                <p>Dealer Mobil adalah perusahaan yang bergerak di bidang penjualan mobil. Dealer Mobil menyediakan berbagai jenis mobil sesuai kebutuhan Anda.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Alamat</h3>
-                <p>Jl. Raya Kediri, No. 1, Kediri, Jawa Timur</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Kontak</h3>
-                <p>Telepon: 08123456789</p>
-                <p>Email: info@dealermobil.com</p>
-            </div>
-        </div>
-        <p class="text-center mt-3">&copy; 2024 Dealer Mobil. All rights reserved.</p>
-    </div>
+    <p>&copy; 2024 AutoDeal. All rights reserved.</p>
+</div>
 </footer>
 
-@endsection
+</body>
 
+<!-- script -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>

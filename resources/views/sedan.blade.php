@@ -2,68 +2,141 @@
 
 @section('content')
 
-<style>
-    .card a {
-        text-decoration: none;
-        color: inherit; /* Pilih warna teks sesuai kebutuhan */
-    }
-</style>
-
 <div class="container my-5" style="color: black;">
     <div class="main-content-box">
         <!-- Section SEDAN -->
-        <div class="sedan">
-            <h1 class="text-center mb-3">SEDAN</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <a href="{{ url('mg5gt') }}">
-                            <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">MG 5 GT</h5>
-                                <p class="card-text">Rp347.9 - 407.9 Juta</p>
-                            </div>
-                        </a>
+        <h1 class="text-center mb-5">SEDAN</h1>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="mg5gt.html">
+                    <img src="{{asset('assets/MG-5-GT.jpg')}}" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mg 5 GT</h5>
+                        <div class="card-text">
+                            <ul class="list-unstyled text-center">
+                                <hr>
+                                <li>
+                                    <span>Otomatis</span>
+                                    <span>Transmisi</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>Bensin</span>
+                                    <span>Bahan bakar</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>1498 cc</span>
+                                    <span>Mesin</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p>Rp347.9 - 407.9 Juta</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <a href="{{ url('bmw') }}">
-                            <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">BMW 320i</h5>
-                                <p class="card-text">Rp837 Jt - 1.145 Milyar</p>
-                            </div>
-                        </a>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="bmw.html">
+                        <img src="{{asset('assets/bmw 320i.jpeg')}}" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bmw 320i</h5>
+                        <div class="card-text">
+                            <ul class="list-unstyled text-center">
+                                <hr>
+                                <li>
+                                    <span>Otomatis</span>
+                                    <span>Transmisi</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>Bensin</span>
+                                    <span>Bahan bakar</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>1498 cc</span>
+                                    <span>Mesin</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p>Rp837 Jt - 1.145 Milyar</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <a href="{{ url('Lexus ls') }}">
-                            <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">Lexus LS 500h</h5>
-                                <p class="card-text">Rp3.535 Milyar</p>
-                            </div>
-                        </a>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="Lexus Ls.html">
+                        <img src="{{asset('assets/slide2.jpg')}}" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Lexus LS 500h</h5>
+                        <div class="card-text">
+                            <ul class="list-unstyled text-center">
+                                <hr>
+                                <li>
+                                    <span>Otomatis</span>
+                                    <span>Transmisi</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>Hybrid</span>
+                                    <span>Bahan bakar</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>3456 cc</span>
+                                    <span>Mesin</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p>Rp3.535 Milyar</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Section SEDAN COUPE -->
-        <div class="sedan-coupe mt-5">
-            <h1 class="text-center mb-3">SEDAN COUPE</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <a href="{{ url('mercedes') }}">
-                            <img src="{{ asset('assets/mobil_2.png') }}" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">Mercedes-Benz AMG GT R Coupe</h5>
-                                <p class="card-text">Rp837 Jt - 1.145 Milyar</p>
-                            </div>
-                        </a>
+        <h1 class="text-center mb-5">SEDAN COUPE</h1>
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card">
+                    <a href="mercedes.html">
+                        <img src="{{asset('assets/mercedes.jpg')}}" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mercedes-Benz AMG GT R Coupe</h5>
+                        <div class="card-text">
+                            <ul class="list-unstyled text-center">
+                                <hr>
+                                <li>
+                                    <span>Otomatis</span>
+                                    <span>Transmisi</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>Bensin</span>
+                                    <span>Bahan bakar</span>
+                                </li>
+                                <hr>
+                                <li>
+                                    <span>2000 cc</span>
+                                    <span>Mesin</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <p>Rp837 Jt - 1.145 Milyar</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +21,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-grid.min.css') }}" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -29,7 +32,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('assets/logo_dealer.png') }}" width="100" alt="Logo Dealer">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -47,13 +52,15 @@
                             <a class="nav-link" href="{{ route('tentangkami') }}">Tentang Kami</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Jenis Mobil
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="{{ route('suv') }}">SUV</a></li>
-                                <li><a class="dropdown-item" href="{{ route('sedan') }}">SEDAN</a></li>
-                                <li><a class="dropdown-item" href="{{ route('mpv') }}">MPV</a></li>
+                                <li><a class="dropdown-item" href="{{ route('home', ['cat' => 'suv']) }}">SUV</a></li>
+                                <li><a class="dropdown-item" href="{{ route('home', ['cat' => 'sedan']) }}">SEDAN</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ route('home', ['cat' => 'mpv']) }}">MPV</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -80,48 +87,93 @@
                                 </li>
                             @endif
                         @else
-                        <li class="nav-item dropdown">
-    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-        {{ Auth::user()->name }}
-    </a>
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
 
-    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{{ url('/profil') }}"
-            onclick="event.preventDefault(); document.getElementById('profil-form').submit();">
-            {{ __('Profil') }}
-        </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    @if (Auth::user()->role == 'Admin')
+                                        <a class="dropdown-item" href="{{ url('/admin') }}">
+                                            {{ __('Admin Dashboard') }}
+                                        </a>
+                                    @endif
 
-        <a class="dropdown-item" href="{{ route('logout') }}"
-            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            {{ __('Logout') }}
-        </a>
+                                    <a class="dropdown-item" href="{{ url('/profil') }}"
+                                        onclick="event.preventDefault(); document.getElementById('profil-form').submit();">
+                                        {{ __('Profil') }}
+                                    </a>
 
-        <form id="profil-form" action="{{ url('/profil') }}" method="GET" style="display: none;">
-            @csrf
-        </form>
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
-    </div>
-</li>
+                                    <form id="profil-form" action="{{ url('/profil') }}" method="GET"
+                                        style="display: none;">
+                                        @csrf
+                                    </form>
 
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
                             </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <main>
-            @yield('content')
-        </main>
+                            @csrf
+                            </form>
+                    </div>
+                    </li>
+                @endguest
+                </ul>
+            </div>
+    </div>
+    </nav>
+
+    <main>
+        @yield('content')
+    </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        @if ($errors->any())
+            Swal.fire({
+                icon: 'error',
+                title: 'Terjadi Kesalahan...',
+                html: "{!! implode('', $errors->all('<div>:message</div>')) !!}"
+            });
+            $('.swal2-select').addClass('d-none');
+        @endif
+        @if (session()->has('error'))
+            Swal.fire({
+                icon: 'error',
+                title: 'Terjadi Kesalahan...',
+                html: "{!! session('error') !!}"
+            });
+            $('.swal2-select').addClass('d-none');
+        @endif
+        @if (session()->has('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                html: "{!! session('success') !!}"
+            });
+        @endif
+        @if (session()->has('info'))
+            Swal.fire({
+                icon: 'info',
+                title: 'Info!',
+                html: "{!! session('info') !!}"
+            });
+        @endif
+    </script>
 
 </body>
+
 </html>

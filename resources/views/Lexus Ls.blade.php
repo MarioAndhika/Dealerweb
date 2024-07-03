@@ -1,37 +1,142 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexus LS 500h | AutoDeal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #1A1A1A;
+            color: white;
+        }
+        .navbar,
+        .footer {
+            background-color: #333;
+        }
 
-@section('content')
+        .main-content-box {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #1A1A1A;
+        }
+
+        .card {
+            background-color: #1A1A1A;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .form-control,
+        .btn {
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+        }
+
+        .spec-icon {
+            filter: invert(1);
+        }
+
+        .spec-box {
+            border: 1px solid #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .price-box {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .specification-section {
+            border: 1px solid #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img class="logo" src="img/logo_dealer.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jenis Mobil
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="suv.html">SUV</a></li>
+                                <li><a class="dropdown-item" href="sedan.html">SEDAN</a></li>
+                                <li><a class="dropdown-item" href="mpv.html">MPV</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tim.html">Tim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
     <!-- Main Content -->
     <div class="container my-5 main-content-box">
         <div class="row">
             <div class="col-md-8">
             <div class="specification-section">
                 <h2 class="text-white">Lexus LS 500h</h2>
-                <img src="{{ asset('assets/.jpeg') }}" class="card-img-top" alt="...">
+                <img src="img/slide2.jpg" class="img-fluid mb-4" alt="Mazda">
             </div>
             <div class="specification-section">
                 <div class="row text-center mb-4">
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/transmission-spec.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/transmission-spec.png" alt="Transmisi Otomatis" class="spec-icon" style="width: 30px;">
                             <p>Otomatis</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/fuel-type.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/fuel-type.png" alt="Bahan Bakar" class="spec-icon" style="width: 30px;">
                             <p>Hybrid</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/engine-size.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/engine-size.png" alt="Mesin" class="spec-icon" style="width: 30px;">
                             <p>3456 cc</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="spec-box">
-                            <img src="{{ asset('assets/model-seats.png') }}" class="card-img-top" style="width: 30px;" alt="...">
+                            <img src="img/model-seats.png" alt="Tempat Duduk" class="spec-icon" style="width: 30px;">
                             <p>5 Tempat Duduk</p>
                         </div>
                     </div>
@@ -42,7 +147,7 @@
                 <div class="price-box">
                     <div class="row">
                         <div class="col-md-4">
-
+                            
                         </div>
                         <div class="col-md-4">
                             <div class="card p-3 mb-3">
@@ -52,7 +157,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-
+                            
                         </div>
                     </div>
                 </div>
@@ -62,7 +167,7 @@
                 <p>Review Lexus LS 500h</p>
                 <p>Lexus LS 500h merupakan varian sedan hybrid dari LS 500 Executive yang dijual seharga Rp.4.665 Milyar.Memiliki dimensi 5235mm x 1900mm x 1450mm (p x I x t),jarak sumbu roda 3125mm dan jarak terendah 147mm.
                     LS 500h dibekali dengan mesin hybrid 3456 cc dengan kode mesin 8GR-FXS berpenggerak roda belakang dengan transmisi 10 speed automatic yang menghasilkan tenaga maksimal 354 bhp dan torsi maksimal 350 nm.lalu menggunakan suspense depan High-Mount Multilink with Air Suspension dan belakang Multilink with Air Suspension.fitur keselamatan yang diberikan seperti ABS,BA,EBD,Vehicle stability control system dan 14 airbag system.</p>
-                <p>sedangkan untuk fitur kenyamanan diberikan Lexus Climate Concierge, Power Trunk with Kick Sensor, 28-Ways Power Adjustable Front Seats, 12.3 inch display USB / iPod Playback Function / AUX,AM/FM Tuner / DVD Player,Bluetooth Connectivity,Mark Levinson Audio with 24 Speakers with Showering Effects, Lexus Navigation System, Blind spot monitor, Nanoe System, Rear Seat Control Panel with Audio, Climate, Seating Arrangement and Sunshades control, Rear Seat Cool Box, Retractable ottoman, Wireless Charger, Smart Air Suspension, EV Drive mode, Seat Heater and Cooler Front and Rear Seats, Regenrative Braking, Adaptive Variable Suspension, Parking Assist dan Drive Mode Select (Normal, Eco,Comfort, Sport S,Sport S+).</p>
+                <p>sedangkan untuk fitur kenyamanan diberikan Lexus Climate Concierge, Power Trunk with Kick Sensor, 28-Ways Power Adjustable Front Seats, 12.3 inch display USB / iPod Playback Function / AUX,AM/FM Tuner / DVD Player,Bluetooth Connectivity,Mark Levinson Audio with 24 Speakers with Showering Effects, Lexus Navigation System, Blind spot monitor, Nanoe System, Rear Seat Control Panel with Audio, Climate, Seating Arrangement and Sunshades control, Rear Seat Cool Box, Retractable ottoman, Wireless Charger, Smart Air Suspension, EV Drive mode, Seat Heater and Cooler Front and Rear Seats, Regenrative Braking, Adaptive Variable Suspension, Parking Assist dan Drive Mode Select (Normal, Eco,Comfort, Sport S,Sport S+).</p>   
             </div>
                 <div class="specification-section">
                     <h3 class="text-white">Spesifikasi Lengkap</h3>
@@ -169,25 +274,18 @@
     </div>
 
  <!-- footer -->
-<footer class="footer mt-5" style="background-color: #333; color: white; padding: 50px 0;">
+ <footer class="footer" style="background-color: #333; color: white; padding: 50px 0;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Dealer Mobil</h3>
-                <p>Dealer Mobil adalah perusahaan yang bergerak di bidang penjualan mobil. Dealer Mobil menyediakan berbagai jenis mobil sesuai kebutuhan Anda.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Alamat</h3>
-                <p>Jl. Raya Kediri, No. 1, Kediri, Jawa Timur</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Kontak</h3>
-                <p>Telepon: 08123456789</p>
-                <p>Email: info@dealermobil.com</p>
-            </div>
-        </div>
-        <p class="text-center mt-3">&copy; 2024 Dealer Mobil. All rights reserved.</p>
-    </div>
+    <p>&copy; 2024 AutoDeal. All rights reserved.</p>
+</div>
 </footer>
 
-@endsection
+</body>
+
+<!-- script -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>
