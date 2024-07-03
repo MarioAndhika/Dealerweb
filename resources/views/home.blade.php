@@ -2,6 +2,7 @@
 
 @section('content')
     <!-- Slider -->
+    @if (!$cat)
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -28,27 +29,34 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    @endif
 
     <!-- Model Teratas -->
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="model mt-5">
-                    <div class="row">
-                        @forelse ($cars as $item)
+                    @forelse ($cars as $item)
+                    <h3 class="text-black @if($cat) text-center mb-5 @else mb-3 @endif">{{ $item->name }}</h3>
+                    <div class="row mb-4 @if($cat) justify-content-center @endif">
+                            @forelse ($item->car as $car)
                             <div class="col-md-3">
-                                <a href="{{ route('car.detail', $item->slug) }}" class="text-decoration-none">
+                                <a href="{{ route('car.detail', $car->slug) }}" class="text-decoration-none">
                                     <div class="card card-body shadow-sm">
-                                        <img src="{{ asset('car/' . $item->image) }}" class="d-block w-100 h-auto">
-                                        <small class="text-muted">{{ $item->category->name }}</small>
+                                        <img src="{{ asset('car/' . $car->image) }}" class="d-block w-100 h-auto">
+                                        <small class="text-muted">{{ $car->category->name }}</small>
                                         <p class="text-black">
-                                            <b>{{ $item->name }}</b>
+                                            <b>{{ $car->name }}</b>
                                             <br>
-                                            RP {{ number_format($item->price, 0, ',', '.') }}
+                                            RP {{ number_format($car->price, 0, ',', '.') }}
                                         </p>
                                     </div>
                                 </a>
                             </div>
+                            @empty
+                            <div class="alert alert-warning">Kategori ini belum ada mobil!</div>
+                            @endforelse
+                        </div>
                         @empty
                             @if ($cat)
                                 <div class="alert alert-warning text-center">Mobil dengan kategori ini belum tersedia!</div>
@@ -56,8 +64,6 @@
                                 <div class="alert alert-warning text-center">Mobil belum tersedia!</div>
                             @endif
                         @endforelse
-
-                    </div>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ class Dashboard extends Controller
 
         // Menghitung total harga dari semua mobil dalam transaksi
         $totalSold = $transactions->sum(function ($transaction) {
-            return $transaction->car->price;
+            return $transaction->car->price ?? 0;
         });
 
         return view('admin.dashboard', [

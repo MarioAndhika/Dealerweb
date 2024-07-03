@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Car;
+use App\Models\Category;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,12 +20,10 @@ class HomeController extends Controller
     {
         $cars = [];
         if ($request->has('cat'))
-            $cars = Car::whereHas('category', function ($q) use ($request) {
-                $q->where('name', 'like', '%' . $request->cat . '%')
-                    ->orWhere('slug', 'like', '%' . $request->cat . '%');
-            })->get();
+            $cars = Category::where('name', 'like', '%' . $request->cat . '%')
+            ->orWhere('slug', 'like', '%' . $request->cat . '%')->with('car')->get();
         else
-            $cars = Car::with('category')->get();
+            $cars = Category::with('car')->get();
 
         return view('home', [
             'cars' => $cars,
